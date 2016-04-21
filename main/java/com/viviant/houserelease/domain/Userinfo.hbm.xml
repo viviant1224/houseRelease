@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.viviant.houserelease.domain">
+
+    <class name="Userinfo" table="USERINFO">
+        <id name="id">
+            <column name="ID"></column>
+            <generator class="identity">
+            </generator>
+        </id>
+
+        <property name="username">
+            <column name="USERNAME" length="100"></column>
+        </property>
+
+        <property name="email">
+            <column name="EMAIL" length="100"></column>
+        </property>
+
+        <property name="address">
+            <column name="ADDRESS" length="100"></column>
+        </property>
+
+        <property name="password">
+            <column name="PASSWORD" length="30"></column>
+        </property>
+
+        <property name="sex">
+            <column name="SEX" length="10"></column>
+        </property>
+
+        <property name="telphone">
+            <column name="TELPHONE" unique="true"></column>
+        </property>
+
+        <property name="state" type="integer">
+            <column name="STATE"></column>
+        </property>
+
+
+    </class>
+
+</hibernate-mapping>

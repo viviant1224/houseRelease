@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.viviant.houserelease.domain">
+
+    <class name="House" table="HOUSE">
+        <id name="id">
+            <column name="ID"></column>
+            <generator class="identity">
+            </generator>
+        </id>
+
+        <property name="bedroomNum" type="integer">
+            <column name="BEDROOMNUM"></column>
+        </property>
+
+        <property name="bathroomNum" type="integer">
+            <column name="BATHROOMNUM"></column>
+        </property>
+
+        <property name="parlourNum" type="integer">
+            <column name="PARLOURNUM"></column>
+        </property>
+
+        <property name="size" type="java.lang.Float">
+            <column name="SIZE"></column>
+        </property>
+
+        <property name="price" type="java.lang.Float">
+            <column name="PRICE"></column>
+        </property>
+
+        <property name="address">
+            <column name="ADDRESS" length="100"></column>
+        </property>
+
+        <property name="desc">
+            <column name="DESC" length="400"></column>
+        </property>
+
+        <property name="releaseTime">
+            <column name="RELEASETIME" length="20"></column>
+        </property>
+
+        <property name="type">
+            <column name="TYPE" length="20"></column>
+        </property>
+
+        <property name="advantage">
+            <column name="ADVANTAGE" length="50"></column>
+        </property>
+
+
+        <property name="state" type="integer">
+            <column name="STATE"></column>
+        </property>
+
+        <property name="pic1">
+            <column name="PIC1" length="20"></column>
+        </property>
+
+        <property name="pic2">
+            <column name="PIC2" length="20"></column>
+        </property>
+
+        <property name="pic3">
+            <column name="PIC3" length="50"></column>
+        </property>
+
+
+        <property name="picMain">
+            <column name="PICMAIN" length="50"></column>
+        </property>
+
+
+        <property name="flag1">
+            <column name="FLAG1" length="20"></column>
+        </property>
+
+        <property name="flag2">
+            <column name="FLAG2" length="20"></column>
+        </property>
+
+        <property name="flag3">
+            <column name="FLAG3" length="50"></column>
+        </property>
+
+
+        <property name="flag4">
+            <column name="FLAG4" length="50"></column>
+        </property>
+
+
+    </class>
+
+</hibernate-mapping>
