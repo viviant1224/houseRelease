@@ -37,6 +37,10 @@
             <column name="STATE"></column>
         </property>
 
+        <property name="role">
+            <column name="ROLE" length="20"></column>
+        </property>
+
 
     </class>
 
