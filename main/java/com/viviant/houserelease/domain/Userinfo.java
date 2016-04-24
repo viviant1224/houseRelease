@@ -15,6 +15,15 @@ public class Userinfo implements Serializable {
     private String address;
     private String state;
     private String role;
+    private String photo;
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
+    public String getPhoto() {
+        return photo;
+    }
 
     public void setRole(String role) {
         this.role = role;

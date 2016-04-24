@@ -55,11 +55,11 @@
         </property>
 
         <property name="pic1">
-            <column name="PIC1" length="20"></column>
+            <column name="PIC1" length="50"></column>
         </property>
 
         <property name="pic2">
-            <column name="PIC2" length="20"></column>
+            <column name="PIC2" length="50"></column>
         </property>
 
         <property name="pic3">
@@ -73,11 +73,11 @@
 
 
         <property name="flag1">
-            <column name="FLAG1" length="20"></column>
+            <column name="FLAG1" length="50"></column>
         </property>
 
         <property name="flag2">
-            <column name="FLAG2" length="20"></column>
+            <column name="FLAG2" length="50"></column>
         </property>
 
         <property name="flag3">

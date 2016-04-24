@@ -41,6 +41,10 @@
             <column name="ROLE" length="20"></column>
         </property>
 
+        <property name="photo">
+            <column name="PHOTO" length="50"></column>
+        </property>
+
 
     </class>
 

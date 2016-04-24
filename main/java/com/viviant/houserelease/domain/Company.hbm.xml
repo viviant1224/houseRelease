@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.viviant.houserelease.domain">
+
+    <class name="Company" table="COMPANY">
+        <id name="id">
+            <column name="ID"></column>
+            <generator class="identity">
+            </generator>
+        </id>
+
+        <property name="companyName">
+            <column name="COMPANYNAME" length="20"></column>
+        </property>
+
+        <property name="companyDesc">
+            <column name="COMPANYDESC" length="1000"></column>
+        </property>
+
+        <property name="logoPic">
+            <column name="LOGOPIC" length="40"></column>
+        </property>
+
+        <property name="pic1">
+            <column name="PIC1" length="40"></column>
+        </property>
+
+        <property name="pic2">
+            <column name="PIC2" length="40"></column>
+        </property>
+
+        <property name="pic3">
+            <column name="PIC3" length="40"></column>
+        </property>
+
+        <property name="pic4">
+            <column name="PIC4" length="40"></column>
+        </property>
+
+        <property name="address">
+            <column name="ADDRESS" length="50"></column>
+        </property>
+
+
+    </class>
+
+</hibernate-mapping>
