@@ -46,6 +46,11 @@
         </property>
 
 
+        <property name="registerTime">
+            <column name="REGISTERTIME" length="20"></column>
+        </property>
+
+
     </class>
 
 </hibernate-mapping>

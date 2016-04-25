@@ -16,6 +16,15 @@ public class Userinfo implements Serializable {
     private String state;
     private String role;
     private String photo;
+    private String registerTime;
+
+    public void setRegisterTime(String registerTime) {
+        this.registerTime = registerTime;
+    }
+
+    public String getRegisterTime() {
+        return registerTime;
+    }
 
     public void setPhoto(String photo) {
         this.photo = photo;
