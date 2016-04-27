@@ -28,7 +28,9 @@
 	<property name="hibernate.hbm2ddl.auto">update</property>
 
 	<!--3-->
-    <mapping resource="com/viviant/houserelease/domain/Userinfo.hbm.xml" />
+    <mapping resource="com/viviant/houserelease/domain/House.hbm.xml" />
+	<mapping resource="com/viviant/houserelease/domain/Company.hbm.xml" />
+	<mapping resource="com/viviant/houserelease/domain/Userinfo.hbm.xml" />
 
 </session-factory>
 

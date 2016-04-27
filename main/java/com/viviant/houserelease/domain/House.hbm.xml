@@ -21,11 +21,11 @@
             <column name="PARLOURNUM"></column>
         </property>
 
-        <property name="size" type="java.lang.Float">
+        <property name="size" type="double">
             <column name="SIZE"></column>
         </property>
 
-        <property name="price" type="java.lang.Float">
+        <property name="price" type="double">
             <column name="PRICE"></column>
         </property>
 
@@ -33,12 +33,12 @@
             <column name="ADDRESS" length="100"></column>
         </property>
 
-        <property name="desc">
-            <column name="DESC" length="400"></column>
+        <property name="houseDesc">
+            <column name="HOUSEDESC" length="400"></column>
         </property>
 
-        <property name="releaseTime">
-            <column name="RELEASETIME" length="20"></column>
+        <property name="releaseHouseTime">
+            <column name="RELEASEHOUSETIME" length="20"></column>
         </property>
 
         <property name="type">
@@ -87,6 +87,10 @@
 
         <property name="flag4">
             <column name="FLAG4" length="50"></column>
+        </property>
+
+        <property name="seenCount" type="integer">
+            <column name="SEECOUNT"></column>
         </property>
 
 

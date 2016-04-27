@@ -14,12 +14,12 @@ public class House implements Serializable{
     private int bedroomNum;
     private int bathroomNum;
     private int parlourNum;
-    private float price;
-    private float size;
+    private double price;
+    private double size;
     private String address;
-    private String desc;
+    private String houseDesc;
     private int state;
-    private String releaseTime;
+    private String releaseHouseTime;
     private String type;
     private String advantage;
     private String flag1;
@@ -28,12 +28,8 @@ public class House implements Serializable{
     private String flag4;
     private int seenCount;
 
-    public void setSeenCount(int seenCount) {
-        this.seenCount = seenCount;
-    }
-
-    public int getSeenCount() {
-        return seenCount;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setPic1(String pic1) {
@@ -52,26 +48,6 @@ public class House implements Serializable{
         this.picMain = picMain;
     }
 
-    public String getPic1() {
-        return pic1;
-    }
-
-    public String getPic2() {
-        return pic2;
-    }
-
-    public String getPic3() {
-        return pic3;
-    }
-
-    public String getPicMain() {
-        return picMain;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public void setBedroomNum(int bedroomNum) {
         this.bedroomNum = bedroomNum;
     }
@@ -84,11 +60,11 @@ public class House implements Serializable{
         this.parlourNum = parlourNum;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
-    public void setSize(float size) {
+    public void setSize(double size) {
         this.size = size;
     }
 
@@ -96,16 +72,16 @@ public class House implements Serializable{
         this.address = address;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setHouseDesc(String houseDesc) {
+        this.houseDesc = houseDesc;
     }
 
     public void setState(int state) {
         this.state = state;
     }
 
-    public void setReleaseTime(String releaseTime) {
-        this.releaseTime = releaseTime;
+    public void setReleaseHouseTime(String releaseHouseTime) {
+        this.releaseHouseTime = releaseHouseTime;
     }
 
     public void setType(String type) {
@@ -132,8 +108,28 @@ public class House implements Serializable{
         this.flag4 = flag4;
     }
 
+    public void setSeenCount(int seenCount) {
+        this.seenCount = seenCount;
+    }
+
     public int getId() {
         return id;
+    }
+
+    public String getPic1() {
+        return pic1;
+    }
+
+    public String getPic2() {
+        return pic2;
+    }
+
+    public String getPic3() {
+        return pic3;
+    }
+
+    public String getPicMain() {
+        return picMain;
     }
 
     public int getBedroomNum() {
@@ -148,11 +144,11 @@ public class House implements Serializable{
         return parlourNum;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public float getSize() {
+    public double getSize() {
         return size;
     }
 
@@ -160,16 +156,16 @@ public class House implements Serializable{
         return address;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getHouseDesc() {
+        return houseDesc;
     }
 
     public int getState() {
         return state;
     }
 
-    public String getReleaseTime() {
-        return releaseTime;
+    public String getReleaseHouseTime() {
+        return releaseHouseTime;
     }
 
     public String getType() {
@@ -194,5 +190,9 @@ public class House implements Serializable{
 
     public String getFlag4() {
         return flag4;
+    }
+
+    public int getSeenCount() {
+        return seenCount;
     }
 }
